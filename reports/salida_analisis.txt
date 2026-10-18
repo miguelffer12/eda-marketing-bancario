@@ -1,0 +1,190 @@
+Registros: 43,000 | Conversión global: 11.27% (4,844 suscripciones)
+
+                     count      mean   mediana       std      min        max  asimetria
+age                43000.0     39.82     38.00      9.96    17.00      98.00       0.88
+duration           43000.0    257.74    179.00    258.67     0.00    4918.00       3.32
+campaign           43000.0      2.57      2.00      2.77     1.00      56.00       4.77
+previous           43000.0      0.17      0.00      0.50     0.00       7.00       3.83
+pdays               1588.0      6.07      6.00      3.86     0.00      27.00       1.44
+emp.var.rate       43000.0      0.08      1.10      1.57    -3.40       1.40      -0.72
+cons.price.idx     43000.0     93.57     93.75      0.58    92.20      94.77      -0.23
+cons.conf.idx      43000.0    -40.51    -41.80      4.64   -50.80     -26.90       0.31
+euribor3m          43000.0      3.62      4.86      1.74     0.63       5.04      -0.70
+nr.employed        43000.0   5166.85   5191.00     72.41  4963.60    5228.10      -1.04
+Income             43000.0  93241.20  93050.50  50498.32  5841.00  180802.00       0.00
+Kidhome            43000.0      1.00      1.00      0.82     0.00       2.00      -0.01
+Teenhome           43000.0      1.00      1.00      0.82     0.00       2.00       0.00
+NumWebVisitsMonth  43000.0     16.59     17.00      9.24     1.00      32.00      -0.01 
+
+Duración mediana (s) por resultado:
+ y
+0    163.0
+1    449.0
+
+Conversión por canal de contacto
+            clientes  tasa_pct
+contact                      
+cellular      27396     14.74
+telephone     15604      5.16
+
+Conversión según resultado de la campaña anterior
+              clientes  tasa_pct
+poutcome                       
+success          1436     65.32
+failure          4461     14.23
+nonexistent     37103      8.82
+
+Conversión por profesión
+                clientes  tasa_pct
+job                              
+student             903     31.34
+retired            1790     25.20
+unemployed         1063     14.39
+admin.            10873     13.01
+unknown             345     11.30
+management         3050     11.21
+technician         7026     10.85
+self-employed      1489     10.81
+housemaid          1123      9.88
+entrepreneur       1522      8.28
+services           4162      8.07
+blue-collar        9654      6.89
+
+Conversión por educación
+                      clientes  tasa_pct
+education                              
+illiterate                 18     22.22
+unknown                  1807     14.44
+university.degree       12722     13.74
+professional.course      5477     11.32
+high.school              9925     10.84
+basic.4y                 4356     10.28
+basic.6y                 2386      8.13
+basic.9y                 6309      7.81
+
+Conversión por grupo de edad
+             clientes  tasa_pct
+grupo_edad                    
+<=25            1657     21.67
+26-35          13705     11.61
+36-45          16616      9.03
+46-55           7542      8.68
+56-65           2904     16.29
+66+              576     46.01
+
+Conversión por mes:
+ contact_month
+1.0     11.60
+2.0     11.13
+3.0     10.73
+4.0     11.19
+5.0     10.63
+6.0     11.33
+7.0     11.41
+8.0     11.46
+9.0     10.25
+10.0    12.36
+11.0    11.49
+12.0    11.45 
+Conversión por año:
+ contact_year
+2015.0    10.87
+2016.0    11.68
+2017.0    10.97
+2018.0    11.45
+2019.0    11.29
+
+Conversión según nº de contactos (10 = 10 o más):
+ campaign_cap
+1     13.02
+2     11.48
+3     10.82
+4      9.29
+5      7.42
+6      7.71
+7      6.08
+8      4.78
+9      5.54
+10     3.51
+
+Conversión por tramo de ingresos (cuartiles)
+                 clientes  tasa_pct
+tramo_ingresos                    
+Q1 (bajo)          10750     11.29
+Q2                 10738     11.50
+Q3                 10760     11.43
+Q4 (alto)          10752     10.84
+
+Conversión por nº de hijos
+              clientes  tasa_pct
+Hijos_total                    
+0                4754     11.74
+1                9504     10.80
+2               14334     11.53
+3                9658     11.02
+4                4750     11.45
+
+Conversión por visitas web mensuales (cuartiles)
+               clientes  tasa_pct
+tramo_web                       
+(0.999, 9.0]     11914     11.21
+(9.0, 17.0]      10797     11.20
+(17.0, 25.0]     10742     11.32
+(25.0, 32.0]      9547     11.34
+
+Conversión por tramo de Euribor 3m
+                clientes  tasa_pct
+euribor_tramo                    
+(0.0, 1.0]         4121     45.84
+(1.0, 2.0]        10038     15.65
+(2.0, 4.0]           15      6.67
+(4.0, 5.5]        28826      4.80
+
+Correlación con y:
+ duration             0.405
+nr.employed         -0.356
+euribor3m           -0.309
+emp.var.rate        -0.298
+previous             0.233
+cons.price.idx      -0.136
+campaign            -0.066
+cons.conf.idx        0.057
+age                  0.031
+Income              -0.005
+Teenhome            -0.001
+NumWebVisitsMonth    0.001
+Kidhome              0.000
+
+--- Contrastes ---
+chi2 contact    p=1.81e-200
+chi2 poutcome   p=0.00e+00
+chi2 job        p=1.99e-207
+chi2 education  p=2.69e-40
+chi2 marital    p=3.28e-26
+chi2 housing    p=4.35e-02
+chi2 loan       p=6.09e-01
+t-test Income             media yes=92584.30 no=93324.60 p=0.334
+t-test NumWebVisitsMonth  media yes=16.60 no=16.59 p=0.907
+t-test age                media yes=40.69 no=39.70 p=0.000
+t-test Kidhome            media yes=1.01 no=1.00 p=0.973
+t-test Teenhome           media yes=1.00 no=1.00 p=0.878
+
+--- Outliers (regla 1.5*IQR) ---
+age: 576 (1.3%)
+duration: 3072 (7.1%)
+campaign: 2504 (5.8%)
+
+Casos extremos de conversión (job x contact, n>=200):
+                         size   mean
+job           contact               
+self-employed telephone   555  0.034
+services      telephone  1743  0.040
+blue-collar   telephone  4321  0.043
+                     size   mean
+job        contact              
+unemployed cellular   657  0.199
+retired    cellular  1288  0.314
+student    cellular   696  0.364
+
+Default: {'no': 34016, 'unknown': 8981, 'yes': 3}
+Housing: {'yes': 22498, 'no': 19476, 'unknown': 1026}
