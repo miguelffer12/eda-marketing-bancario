@@ -24,7 +24,7 @@ pip install -r requirements.txt
 python src/cleaning.py    # genera data/processed/*.csv
 python src/analysis.py    # genera figures/*.png e imprime las tablas
 ```
-Los scripts usan rutas relativas a la raíz del repositorio, por lo que funcionan desde cualquier directorio (probados con Python 3.12 / pandas 2.x+).
+Los scripts usan rutas relativas a la raíz del repositorio, por lo que funcionan desde cualquier directorio (probados con Python 3.12 / pandas 2).
 
 ---
 
